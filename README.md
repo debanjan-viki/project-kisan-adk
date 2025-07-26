@@ -28,8 +28,8 @@ cd project-kisan-adk
 
 1. Set up your Google ADK credentials as environment variables or in a `.env` file and add the following:
     GOOGLE_GENAI_USE_VERTEXAI=true
-    GOOGLE_CLOUD_PROJECT=<your-project-id>
-    GOOGLE_CLOUD_LOCATION=<your-project-location>
+    GOOGLE_CLOUD_PROJECT={your-project-id}
+    GOOGLE_CLOUD_LOCATION={your-project-location}
     PORT=<your-port-number> (Default 8000)
 
 ## Running the Server
