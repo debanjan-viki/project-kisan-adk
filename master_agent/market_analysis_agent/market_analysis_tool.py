@@ -2,9 +2,10 @@ import requests
 import json
 
 def get_market_data():
-    url = "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd000001a9bd2679973c4ed84aca051575375f0a&format=json"
+    # url = "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd000001a9bd2679973c4ed84aca051575375f0a&format=json"
     
-    response = requests.get(url)
+    with open('reponse.json', 'r') as file:
+        response = json.load(file)
     
     if response.status_code == 200:
         response = response.json()
